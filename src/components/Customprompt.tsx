@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function CustomPrompt({ palette }: { palette: string[] }) {
   const [showPrompt, setShowPrompt] = useState(false);
