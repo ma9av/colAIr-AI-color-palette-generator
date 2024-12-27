@@ -8,7 +8,8 @@ const Library = ({ palettesObj, setToggle}:{palettesObj:ObjWithArray , setToggle
     const [k, setK] = useState(0);
 
   return (
-    <div className="w-full h-full absolute right-0 top-0 z-10" style={{backgroundColor:"rgba(0, 0, 0, 0.7)"}}>
+    <div className="w-full h-full absolute right-0 top-0 z-10 flex" style={{backgroundColor:"rgba(0, 0, 0, 0.7)"}}>
+      <div className="w-2/3 " onClick={()=> setToggle(false)}></div>
 
     <div className="p-5 absolute right-0 top-0 z-10 h-full w-1/3 font-mono bg-gray-400 overflow-auto">
 
