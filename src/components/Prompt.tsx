@@ -3,15 +3,11 @@ import Palette from "./Palette"
 const Prompt = () => {
     const [prompt, setPrompt] = useState('')
     const [ palettes, setPalettes ] = useState("#F2D7D5 #E6B8AF #C48B80 #A35A52 #822E24 #510A00 \n#FFD700 #FFB347 #FFA000 #FF8C00 #FF7F50 #E97451\n#D5F5E3 #A7D1AB #78C0A8 #45B39D #1E8470 #00665E\n")
-
-
-    const handleSubmit = async ()=>{
-
-        console.log("inside prompt");
-        
-
     
-        const data = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCNwsryfS3mLr_kdaLVhSM5Sph8LQW668s`, {
+
+    const handleSubmit = async ()=>{        
+
+        const data = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${import.meta.env.VITE_KEY}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

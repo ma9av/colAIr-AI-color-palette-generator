@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@types/tinycolor2": "^1.4.6",
+    "dotenv": "^16.4.7",
     "example": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
