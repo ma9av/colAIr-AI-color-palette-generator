@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@types/tinycolor2": "^1.4.6",
+    "@vercel/analytics": "^1.4.1",
+    "@vercel/speed-insights": "^1.1.0",
     "dotenv": "^16.4.7",
     "example": "file:",
     "react": "^18.3.1",
