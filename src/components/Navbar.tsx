@@ -9,10 +9,9 @@ const Navbar = () => {
   
   return (
     <>
-      {toggle && <Library palettesObj={palettesObj} setToggle={setToggle} />}
-    <div className=" sticky top-0">
-        <nav className="w-full flex h-20 font-mono justify-between " role="navigation">
-          <div className="p-5">
+      {toggle && <Library palettesObj={palettesObj} setToggle={setToggle} />} 
+    <div className=" sticky top-0 w-full flex h-20 font-mono justify-between bg-[#242424]">
+          <div className="p-5 ">
             <span className="font-bold text-3xl"> col<span className="text-orange-400">AI</span>r </span>
           </div>
           <div className="p-5 cursor-pointer" onClick={() => setToggle(true)}>
@@ -20,7 +19,6 @@ const Navbar = () => {
       </span>
           </div>
 
-        </nav>
     </div>
     </>
   )

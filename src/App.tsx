@@ -14,17 +14,17 @@ const App = () => {
 
   return (
     <>
-    <div className='flex flex-col h-screen gap-10 items-center font-mono'>
-        <div className='place-content-center pl-10 pr-10 pt-10 text-wrap '>
+    <div className='flex flex-col h-screen w-full gap-10 items-center font-mono'>
+        <div className='place-content-center pl-10 pr-10 pt-10 '>
           <Hero />
         </div>
 
-        <div className='md:w-1/2 pl-5 place-content-center'> 
+        <div className='md:w-1/2'> 
           <Prompt /> 
         </div>
 
-        <div className='absolute bottom-20'>
-          Built with ❤️ from <a href="https://github.com/ma9av">ma9av</a>
+        <div className='absolute bottom-10'>
+          Built with ❤️ from <a href="https://portfolio-manav.vercel.app/">ma9av</a>
         </div>
 
     </div>

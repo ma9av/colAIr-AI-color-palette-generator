@@ -31,7 +31,7 @@ const Prompt = () => {
   return (
     <div className="">
 
-    <div className="flex justify-start "style={{ padding:"10px", gap:"1rem"}}>
+    <div className="flex "style={{ padding:"10px", gap:"1rem"}}>
         <input className= "w-4/5" type="text" value={prompt} onChange = {(e) => setPrompt(e.target.value)} style={{padding:"20px", width:"", borderRadius:"20px", fontSize:"20px",fontWeight:"bold"}}/>
         <button className = "w-1/5 bg-purple-400 text-black" onClick={()=> handleSubmit()}> Submit </button>
     </div>
