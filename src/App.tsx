@@ -19,11 +19,11 @@ const App = () => {
           <Hero />
         </div>
 
-        <div className='md:w-1/2'> 
+        <div className='md:w-1/2 w-screen'> 
           <Prompt /> 
         </div>
 
-        <div className='absolute bottom-10'>
+        <div className='pt-10'>
           Built with ❤️ from <a href="https://portfolio-manav.vercel.app/">ma9av</a>
         </div>
 
