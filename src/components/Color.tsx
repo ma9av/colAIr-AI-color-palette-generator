@@ -6,7 +6,7 @@ const Color = ({ color , index}:{color: string, index:number}) => {
     const complement = findComplementOfHex(color)
 
   return (
-    <div  className = "w-1/6 h-20 cursor-pointer text-center" key={index} style={{ backgroundColor: hover ? complement : color, 
+    <div  className = "w-1/6 h-20 cursor-pointer text-center text-sm md:text-base" key={index} style={{ backgroundColor: hover ? complement : color, 
         color: color, 
         borderTopLeftRadius: index === 0  ? "20px" :"",
         borderBottomLeftRadius: index === 0  ? "20px" :"",

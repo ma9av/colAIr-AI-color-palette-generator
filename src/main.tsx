@@ -9,7 +9,7 @@ inject()
 injectSpeedInsights()
 
 createRoot(document.getElementById('root')!).render(
-<div className=''>
+<div className='relative'>
     <Navbar />
     <App />
 </div>

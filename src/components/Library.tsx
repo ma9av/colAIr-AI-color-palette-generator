@@ -8,12 +8,12 @@ const Library = ({ palettesObj, setToggle}:{palettesObj:ObjWithArray , setToggle
     const [k, setK] = useState(0);
 
   return (
-    <div className="w-full h-full absolute right-0 top-0 z-10 flex" style={{backgroundColor:"rgba(0, 0, 0, 0.7)"}}>
-      <div className="w-2/3" onClick={()=> setToggle(false)}></div>
+    <div className="w-screen h-full absolute left-0 top-0 z-10 flex" style={{backgroundColor:"rgba(0, 0, 0, 0.7)"}}>
+      <div className="md:w-2/3 w-1/5 min-h-screen" onClick={()=> setToggle(false)}></div>
 
-    <div className="p-5 absolute right-0 top-0 z-10 h-full md:w-1/3 font-mono bg-gray-400 overflow-auto">
+    <div className="md:w-1/3 w-4/5 font-mono bg-gray-400 overflow-auto">
 
-       <div className=" flex justify-between text-3xl">
+       <div className=" flex justify-between text-3xl p-5">
         <span> Library </span>
         <span className = "cursor-pointer" onClick={() => setToggle(false)}> X </span>
 
@@ -24,7 +24,7 @@ const Library = ({ palettesObj, setToggle}:{palettesObj:ObjWithArray , setToggle
             Object.keys(palettesObj).map((key) => {
                 return (
                     <div className="">
-              <span className=""> {key}{" "} <span className="cursor-pointer" onClick={()=>{
+              <span className="p-2">{" "} {key}{" "} <span className="cursor-pointer" onClick={()=>{
                   delete palettesObj[key]
                   localStorage.setItem('palettes', JSON.stringify(palettesObj))
                   setK(k+1)
