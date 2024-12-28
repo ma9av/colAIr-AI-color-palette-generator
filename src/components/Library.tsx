@@ -9,9 +9,9 @@ const Library = ({ palettesObj, setToggle}:{palettesObj:ObjWithArray , setToggle
 
   return (
     <div className="w-full h-full absolute right-0 top-0 z-10 flex" style={{backgroundColor:"rgba(0, 0, 0, 0.7)"}}>
-      <div className="w-2/3 " onClick={()=> setToggle(false)}></div>
+      <div className="" onClick={()=> setToggle(false)}></div>
 
-    <div className="p-5 absolute right-0 top-0 z-10 h-full w-1/3 font-mono bg-gray-400 overflow-auto">
+    <div className="p-5 absolute right-0 top-0 z-10 h-full md:w-1/3 font-mono bg-gray-400 overflow-auto">
 
        <div className=" flex justify-between text-3xl">
         <span> Library </span>
@@ -34,7 +34,7 @@ const Library = ({ palettesObj, setToggle}:{palettesObj:ObjWithArray , setToggle
                 {
                     palettesObj[key].map((color: string) => {
                         if(color === "") return
-                        return <div className="w-1/6" style={{backgroundColor:color}}> {color} </div>
+                        return <div className="w-1/6 text-center" style={{backgroundColor:color}}> {color} </div>
                         
                     })
                 }

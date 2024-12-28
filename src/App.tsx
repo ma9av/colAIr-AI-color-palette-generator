@@ -15,15 +15,15 @@ const App = () => {
   return (
     <>
     <div className='flex flex-col h-screen gap-10 items-center font-mono'>
-        <div className='place-content-center pt-10'>
+        <div className='place-content-center pl-10 pr-10 pt-10 text-wrap '>
           <Hero />
         </div>
 
-        <div className='w-1/2 place-content-center'> 
+        <div className='md:w-1/2 pl-5 place-content-center'> 
           <Prompt /> 
         </div>
 
-        <div className='absolute bottom-10'>
+        <div className='absolute bottom-20'>
           Built with ❤️ from <a href="https://github.com/ma9av">ma9av</a>
         </div>
 
